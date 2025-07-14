@@ -39,3 +39,30 @@ This project implements a **Finite State Machine (FSM)-based vending machine con
 
 ## 📁 Directory Structure
 
+vending_machine_fsm/
+├── src/
+│ └── vending_fsm.v # FSM module implementation
+├── tb/
+│ └── tb_vending_fsm.v # Verilog testbench for simulation
+├── waveforms/
+│ └── vending_waveform.png # (optional) simulation waveform
+├── README.md
+
+
+---
+
+## 📜 Instruction Format
+
+### Inputs:
+- `coin[2:0]`: 3-bit input for coin value (1, 2, or 5)
+- `cancel`: Resets the balance and returns to IDLE
+- `reset`: System reset
+- `clk`: Clock input
+
+### Outputs:
+- `dispense`: High for one cycle when an item is dispensed
+- `balance[3:0]`: Shows current coin balance (0–15)
+
+---
+
+
