@@ -35,18 +35,6 @@ This project implements a **Finite State Machine (FSM)-based vending machine con
 - From `COLLECT` → `DISPENSE` when balance ≥ 7
 - From any state → `IDLE` on cancel or after dispense
 
----
-
-## 📁 Directory Structure
-
-vending_machine_fsm/
-├── src/
-│ └── vending_fsm.v # FSM module implementation
-├── tb/
-│ └── tb_vending_fsm.v # Verilog testbench for simulation
-├── waveforms/
-│ └── vending_waveform.png # (optional) simulation waveform
-├── README.md
 
 
 ---
